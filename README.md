@@ -59,6 +59,8 @@ The running instruction are as followed:
 
 ### Click bellow for backend API
 http://localhost:8080/swagger-ui.html
+You can see all API endpoints here
+![Screenshot](Capture6.PNG)
 
 ### Click bellow for frontend
 http://localhost:3000
