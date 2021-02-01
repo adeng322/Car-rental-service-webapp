@@ -40,6 +40,11 @@ function Pay() {
     amountToPayBack = (amountToPayBack / 1 | 0) + cents;
     return amountToPayBack;
   }
+
+  function onClose(e) {
+    setNotEnough(false);
+    console.log(e, 'I was closed.');
+  };
   
   function onFinish(values) {
     const euro50 = parseInt(values["euro50"]) ? parseInt(values["euro50"]) :  0;
@@ -49,9 +54,12 @@ function Pay() {
     const euro2 = parseInt(values["euro2"]) ? parseInt(values["euro2"]) : 0;
     const euro1 = parseInt(values["euro1"]) ? parseInt(values["euro1"]) : 0;
     const cents50 = parseInt(values["cents50"]) ? parseInt(values["cents50"]) : 0;
-    const cents20 = parseInt(values["cents20"]) ? parseInt(values["euro20"]) : 0;
+    const cents20 = parseInt(values["cents20"]) ? parseInt(values["cents20"]) : 0;
         
-    var paidAmount = euro50 * 50 + euro20 * 20 + euro10 * 10 + euro5 * 5 + euro2 * 2 + euro1 + cents50 * 0.5 + cents20 * 20;
+    var paidAmount = euro50 * 50 + euro20 * 20 + euro10 * 10 + euro5 * 5 + euro2 * 2 + euro1 + 
+                    cents50 * 0.5 + cents20 * 0.2;
+    
+    console.log(paidAmount);
     
     if (paidAmount < amount) setNotEnough(true); 
     if (paidAmount >= amount) {
@@ -156,7 +164,6 @@ function Pay() {
               finish payment
           </Button>
         </Form.Item>
-
         {!notEnough ? null : 
           <Alert
             message="Error"
@@ -164,6 +171,7 @@ function Pay() {
             type="error"
             showIcon
             closable
+            onClose = {onClose}
           />
         }
       </Form>
