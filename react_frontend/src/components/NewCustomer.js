@@ -34,8 +34,9 @@ function NewCustomer() {
       <Card>
         Your ID card number is: <b>{customerId}</b>
         <br/>
-        Please keep this number is hand (better <b>copy</b> it as you need it if you click rent). 
-        You need this ID when you rent or return a vehicle.
+        Please keep this number in hand (better <b>copy</b> it as you need it if you click rent). 
+        <br/>
+        <i>You always need this customer ID when you rent or return a vehicle.</i>
         <br/><br/>
         <Row justify="center">
             <Button block onClick={() => history.push('/rent')}>Rent a vehicle now</Button>

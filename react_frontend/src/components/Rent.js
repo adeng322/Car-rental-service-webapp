@@ -131,8 +131,8 @@ function Rent() {
     return (
     <>
     <Card>
-      You successfully order one <i>{vehicle.vehicleType}</i> vehicle. 
-      And you can pick up your vehicle at <strong>{vehicle.vehicleLocation}</strong>.
+      You successfully ordered one <i>{vehicle.vehicleType}</i> vehicle. 
+      You can pick up your vehicle at <strong>{vehicle.vehicleLocation}</strong>.
       <br/>
       {customer.customerType === "regular" ? <text>As a regular customer,
           you need to pay <b>{pledge}</b> euro for pledge. </text> : null}

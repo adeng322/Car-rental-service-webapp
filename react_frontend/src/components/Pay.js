@@ -182,7 +182,12 @@ function Pay() {
   if (paid === 1) {
     return (
       <Card>
-        Your have successfully paid for your vehicle! Here are your changes:
+        Your have successfully paid for your vehicle!
+        <br/>
+        The bill was {amount} euro. You have paid {cashBack.paidAmount} euro. In total,
+        we pay you back <b>{cashBack.changes} euro.</b>
+        <br/>
+        Here are your changes:
         {cashBack.euro50 > 0 ? <text><br/>{cashBack.euro50} * 50 euro</text> : null}
         {cashBack.euro20 > 0 ? <text><br/>{cashBack.euro20} * 20 euro</text> : null}
         {cashBack.euro10 > 0 ? <text><br/>{cashBack.euro10} * 10 euro</text> : null}
@@ -191,9 +196,6 @@ function Pay() {
         {cashBack.euro1 > 0 ? <text><br/>{cashBack.euro1} * 1 euro</text> : null}
         {cashBack.cents50 > 0 ? <text><br/>{cashBack.cents50} * 50 cents</text> : null}
         {cashBack.cents20 > 0 ? <text><br/>{cashBack.cents20} * 20 cents</text> : null}
-        <br/>
-        The bill was {amount} euro. You have paid {cashBack.paidAmount} euro. In total,
-        we pay you back <b>{cashBack.changes} euro.</b>
       </Card>
     );
   }
