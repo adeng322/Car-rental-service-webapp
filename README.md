@@ -1,4 +1,4 @@
-# CRS(SlimmerAi) by Ai Deng
+# Car Rental Service(Spring boot + mysql + react js) by Ai Deng
 ## Demo
 ![Screenshot](Capture1.PNG)
 ![Screenshot](Capture2.PNG)
