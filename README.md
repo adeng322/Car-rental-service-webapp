@@ -1,4 +1,4 @@
-# Car Rental Service(Spring boot + mysql + react js) by Ai Deng
+# Simple RESTful app(Spring boot + mysql + react js) setup
 ## Demo
 ![Screenshot](Capture1.PNG)
 ![Screenshot](Capture2.PNG)
