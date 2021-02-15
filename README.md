@@ -1,4 +1,4 @@
-# RESTful app(Spring boot + mysql + react js) webapp
+# RESTful app (Spring boot + mysql + react js) webapp
 ## Demo
 ![Screenshot](Capture1.PNG)
 ![Screenshot](Capture2.PNG)
