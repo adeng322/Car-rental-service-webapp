@@ -36,8 +36,7 @@ if the return is delayed, if not the return is successful.
     If you rent a vehicle and choose a return time that is tomorrow, then 
     you return the vehicle, the system would tell you the return is delayed.
     
-Due to time limit, the system is not expanded any further. However I believe it 
-is possible to do so. Worth to mention, I used _swagger api_ to provide an API
+Worth to mention, I used _swagger api_ to provide an API
 documentation. So you could access http://localhost:8080/swagger-ui.html to see
 all implemented endpoints after running the server. Also flyway migration is used
 to document all changes of database table.
